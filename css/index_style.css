@@ -1,0 +1,849 @@
+
+:root
+{
+	--maincolor:#4e9cb5
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+body
+{
+	overflow: hidden;
+}
+.main-color
+{
+	color: var(--maincolor);
+}
+.btn-main
+{
+	background-color: var(--maincolor);
+	color: #fff;
+}
+.btn-main:hover
+{
+	opacity: .9;
+}
+
+a:hover
+{
+	text-decoration: none
+}
+a
+{
+	color: #333
+}
+/* srart nav bar */
+
+.navbar
+{
+	position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:83px; 
+    width:100%;
+    z-index:999;
+	background-color: transparent;	
+}
+.fixed li a
+{
+	color: #333!important;
+}
+
+         /* start navbar*/
+#Home
+{
+	background-image: url(../images/back-1.jpg);
+	background-size: cover;
+}
+
+.nav-content li a
+{
+	
+	font-size: 15px!important;
+    font-weight: 600!important;
+    letter-spacing: .5px!important;
+	color: #fff!important;
+}
+.fixed
+{
+  background-color: #fff;	
+}
+.fixed li a
+{
+	color: #333!important;
+}
+.nav-content li a:hover
+{
+	color: var(--maincolor)!important;
+}
+.nav-content .activee
+{
+	color: var(--maincolor)!important;
+}
+       /* end navbar*/
+
+      /* start home*/
+
+
+.home-content
+{
+	padding-top: 20%;
+	color: #fff;
+}
+.home-content h2
+{
+	font-weight: bold;
+	font-size: 70px
+}
+.home-content .btn-2
+{
+	background-color: transparent;
+	margin-left: 10px;
+	opacity: .8;
+	outline-color: transparent;
+	color: #fff;
+}
+.wheal i
+{
+	color: #fff;
+	padding: 10px 5px;
+	font-size: 18px;
+	border: 1px solid #fff;
+	border-radius: 86%;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.wheal i:hover
+{
+	margin-top: 0;
+}
+
+
+      /* end home  */
+
+      /* start  About */
+
+
+.about-header h2
+{
+	position: relative;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+}
+.about-header p{
+	font-size: 18px;
+    color: #999;
+    margin-bottom: 70px;
+	margin-top: 10px
+}
+.about-header h2::after
+{
+	content:"A";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+hr{
+
+    border-top: 1px solid #333;
+	width: 3%;
+	margin: auto;
+}
+.about-header:hover hr
+{
+	width: 5%;
+}
+.progress-container .progress
+{
+	    height: .5rem;
+	
+}
+.progress-container .progress-bar
+{
+	background-color: var(--maincolor);
+}
+.progress-container span
+{
+	color: #444;
+    font-weight: 600;
+}
+/* end About  */
+
+/* start second-secton  */
+
+#second-secton
+{
+	background-image: url(../images/mission.jpg);
+	background-size: cover;
+    color: #fff;
+}
+.skills:hover  i , .skills:hover h5
+{
+	
+	color: var(--maincolor);
+}
+/* end second-secton  */
+
+/* start TEAM secton  */
+
+.about-team h2::after
+{
+	content:"O";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-container
+{
+	position: relative;
+	overflow-x: hidden;
+}
+.img-container img
+{
+	width: 100%;
+}
+.img-position
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--maincolor);
+	opacity: .8;
+	display: none;
+
+}
+.img-position i
+{
+	margin-top: 70%;
+	color: #fff;
+	padding: 10px
+}
+.team p
+{
+	color: #666;	
+}
+.team:hover .img-position
+{
+	display: block;
+}
+.team:hover .img-container
+{
+	border-radius: 10px;
+	box-shadow: 3px 2px;
+}
+.team:hover  h5
+{
+	color: var(--maincolor);
+}
+
+/* end TEAM secton  */
+
+
+/* start PROJECT SECTION  */
+
+
+.project-header h2::after
+{
+	content:"R";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.project-header p , .project-header .exit
+{
+	font-size: 18px;
+    color: #999;
+    margin-bottom: 10px;
+    margin-top: 10px;
+	cursor: pointer;
+}
+.project-header a 
+{
+	color: #999;
+	padding: 10px;
+}
+.project-span span
+{
+	font-weight: bold;
+}
+.project-header a:hover , .exit:hover
+{
+	color: #333;
+}
+#project , #project-2 , #project-3
+{
+	display: none;
+}
+.navbar-toggler span i
+{
+	color: var(--maincolor);
+}
+.navbar-toggler span i:hover
+{
+ transform: rotate(90deg);
+}
+.project-header  li
+{
+	display: inline-block;
+	padding: 3px 20px;
+    font-weight: 600;
+    color: #282828;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.project-header  li:hover
+{
+	color: var(--maincolor);
+}
+.project-header .activ
+{
+	 border: 1px solid var(--maincolor);
+	
+}
+.project-img
+{
+	position: relative;
+	overflow-x: hidden;
+	cursor: pointer;
+}  
+
+.project-img img
+{
+	width: 100%;	
+}
+.position-project
+{
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	right:2px;
+	left: 2px;
+	background-color: rgba(255,255,255, .8);
+	overflow: hidden;
+	display: none;
+}
+
+.position-project h5
+{
+	margin-top: 40%
+}
+.project-img:hover .position-project
+{
+	display: block;
+}
+
+/* end PROJECT secton  */
+
+
+/* start services SECTION  */
+.service-header h2::after
+{
+	content:"S";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#service
+{
+	background-color: #fafafa;
+}
+.service-content span
+{display: block;
+    float: left;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: normal;
+	width: 20%;
+	color: var(--maincolor);
+}
+.service-text
+{
+  float: right;
+  width: 80%;
+}
+.service-text p
+{
+    margin: 25px 0 ;
+	color: #666;
+}
+.service-content:hover .service-text h4
+{
+	color: var(--maincolor);
+}
+
+/* end services SECTION  */
+
+
+/* start testmonial SECTION  */
+.testmonial-header h2::after
+{
+	content:"C";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}	
+
+/* start testmonial SECTION  */
+.testmonial img
+{
+	border-radius: 50%;
+}
+#testmonial
+{
+	background-color: #fafafa;
+}
+.owl-prev , .owl-next
+{
+	display: none!important;
+}
+/* end testmonial SECTION  */
+
+/* start client SECTION  */
+.client
+{
+	background-color: #666
+}
+.client p , .client h2
+{
+	color: #fff;
+	font-weight: 800;		
+}
+/* end client SECTION  */
+
+/* start blog SECTION  */
+
+.blog-header h2::after
+{
+	content:"B";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#B#log
+{
+	background-color: #fafafa;
+}
+
+.card img:hover
+{
+	opacity: .4;
+}
+.card img
+{
+	position: relative
+}
+.blog-1::after
+{
+	content: "PHOTOGRAPHY";
+	position: absolute;
+	right: 0;
+	top: 30px;
+	background-color: var(--maincolor);
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+}
+.blog-2::after
+{
+	content: "LIFESTYLE";
+	position: absolute;
+	right: 0;
+	top: 30px;
+	background-color: var(--maincolor);
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+}
+.blog-3::after
+{
+	content: "DEVELOPMENT";
+	position: absolute;
+	right: 0;
+	top: 30px;
+	background-color: var(--maincolor);
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+}
+.clock
+{
+    padding: 0 0 20px 0;
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+}
+.clock a
+{
+	margin-left: 10px;
+	color: #444;
+}
+/* end client SECTION  */
+
+/* start Price SECTION  */
+
+#price
+{
+	background-image: url(../images/pricing.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+#price .price-header
+{
+	color: #fff;
+}
+.money h2
+{
+	position: relative;
+	font-size: 60px;
+	font-weight: bold;
+}
+.money h2::after
+{
+	position: absolute;
+	content: "$";
+	font-size: 20px;
+    content: "$";
+    bottom: -12px;
+    left: 76px;
+    font-size: 20px;
+    right: 149px;
+    top: 60px;
+}
+.price-content
+{
+	background-color: #fff;
+	padding: 50px 30px;
+}
+.price-basic
+{
+	padding: 30px 20px;
+    margin-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    background: #f0f0f0;
+	transition: all 0.1s;
+}
+.price-content li
+{
+	list-style: none;
+	padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.price-card:hover .price-basic 
+{
+	color: var(--maincolor);
+}
+.price-card .btn:hover
+{
+	background-color: var(--maincolor);
+	border: 1px solid var(--maincolor);	
+}
+.price-second
+{
+	padding: 30px 20px;
+    margin-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    background: var(--maincolor);
+	transition: all 0.1s;
+}
+.price-header p
+{
+	color: #fff;
+}
+
+/* end contact SECTION  */
+
+/* start  SECTION  */
+
+.contact-header h2::after
+{
+	content:"G";
+	position: absolute;
+	font-size: 2em;
+    opacity: .06;
+    top: -0.17em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.contact-i
+{
+	width: 10%;
+   color: var(--maincolor);
+}
+.contact-text
+{
+	width: 90%;
+}
+.contact-content:hover h5
+{
+	color: var(--maincolor);
+}
+.contact-content hr
+{
+	width: 400px;
+    border: 1px solid #eee;
+	margin: 20px 0 20px 0
+}
+
+
+/* end contact SECTION  */
+
+/* start footer SECTION  */
+
+#footer
+{
+	background-image: url(../images/dotted-map.png);
+    background-color:#222;
+	color: #fff;
+	background-size: cover;
+	position: relative;
+}
+.scroll-top i
+{
+	margin: auto;
+	color: #fff;
+	background-color: var(--maincolor);
+	padding: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: .8;
+}
+.scroll-top i:hover
+{
+	opacity: 1;
+}
+
+.scroll-top 
+{
+	 position:absolute;
+    top:-15px;
+    left:48%;
+    width:50px;
+    height:50px;
+    text-align: center;
+}
+#footer a
+{
+	color: #fff;
+}
+#footer a:hover{
+	color: var(--maincolor);
+}
+#footer span
+{
+	padding: 3px 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 5px 0;	
+}
+#footer span:hover
+{
+	border: 1px solid var(--maincolor);
+	color: var(--maincolor)
+}
+.last-footer
+{
+   background: #1a1a1a;
+    padding-top: 20px;
+}
+.last-footer a
+{
+	font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    width: 1.2em;
+    text-align: center;
+	padding: 0 10px;
+}
+.last-footer a:hover
+{
+	color: var(--maincolor);
+} 
+.last-footer p 
+{
+	color: #b0b0b0;
+}
+
+ /* end footer SECTION  */
+
+/* start alwan SECTION  */
+
+.alwan 
+{
+	width: 300px;
+	height: 150px;
+	position: fixed;
+	left:-300px;
+	top:200px;
+	background-color: #fff;
+	z-index: 55555;
+	border: 1px solid #eee;
+	box-shadow: 1px 2px ;
+	
+}
+.alwan h2
+{
+	padding-top: 10px
+}
+.alwan li
+{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	padding: 10px;
+	cursor: pointer;
+	text-align-last: center;
+	margin:30px 4px;
+	border-radius: 5px;
+}
+.alwan i
+{
+	position: absolute;
+    right: -38px;
+    bottom: 58px;
+    color: #fff;
+	text-align: center;
+	background-color: #333;
+	padding: 5px 8px;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+.pink
+{
+	background-color: #f25454;
+}
+.green
+{
+	background-color: #24bca4;
+}
+.blue
+{
+	background-color: #4e9cb5;
+}
+.smawi
+{
+	background-color:#46cad7;
+}
+.yellow
+{
+	background-color: #e4d20c;
+}
+.roz
+{
+	background-color: #c86f98
+}
+.white-red
+{
+	background-color: #ee8f67
+}
+/* end alwan SECTION  */
+
+.loading
+{
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--maincolor);
+	z-index: 99999999;
+	
+}
+
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
