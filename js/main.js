@@ -8,6 +8,10 @@ $(function(){
 	  
 	
 		/* END  loading section */ 
+	$(".navbar-toggler-icon i").click(function(){
+		console.log("nm")
+		$(".nav-link").css("background-color" , "grey" )
+	})
 	
  $('#Home').height($(window).height());
        $(window).resize(function(){
@@ -119,22 +123,32 @@ $('.owl-carousel').owlCarousel({
 	
 	
 	/* start  project section */ 
-	  $(".exit").click(function(){ $("#project").fadeOut(500 , function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top  -30 },1000) }  )});
+	  $(".exit").click(function(){
+		  $("#project-3").fadeOut(500 ,function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top-30 },1000) })
+		  $("#project-2").fadeOut(500 ,function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top-30 },1000) })
+		  $("#project").fadeOut(500 , function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top  -30 },1000) }) });
 	
-	 $(".exit").click(function(){ $("#project-3").fadeOut(500 ,function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top-30 },1000) }  )});
-	
-	 $(".exit").click(function(){ $("#project-2").fadeOut(500 , function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top-30 },1000) }  )});
 	
 	
-	  $(".Branding").click(function(){ $("#project").fadeIn( 800 , 
-		 function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top+850 },1000) }  
+	  $(".Branding").click(function(){
+		  $("#project-3").fadeOut();
+		  $("#project-2").fadeOut();
+		  $("#project").fadeIn( 800 , function(){
+		  $("html , body").animate({scrollTop: $($("#Projects")).offset().top+850 },500) }  
 														     )});
 	
-	  $(".Photography").click(function(){ $("#project-2").fadeIn( 800 , 
+	
+	  $(".Photography").click(function(){
+		  $("#project").fadeOut();
+		  $("#project-2").fadeOut();
+		  $("#project-3").fadeIn( 800 , 
 	  function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top+850 },1000) } 												
 															  )});
 	
-	  $(".Web-Design").click(function(){ $("#project-3").fadeIn( 800 ,
+	  $(".Web-Design").click(function(){
+		  $("#project-3").fadeOut();
+		  $("#project").fadeOut();
+		  $("#project-2").fadeIn( 800 ,
 	  function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top+850 },1000) } 												                                                          )});
 	
 	/* END  project section */ 
