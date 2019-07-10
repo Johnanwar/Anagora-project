@@ -60,6 +60,7 @@ a
 {
 	background-image: url(../images/back-1.jpg);
 	background-size: cover;
+	height: 600px;
 }
 
 .nav-content li a
@@ -428,7 +429,7 @@ hr{
 }
 #testmonial
 {
-	background-color: #fafafa;
+	background-color: #fff;
 }
 .owl-prev , .owl-next
 {
@@ -629,11 +630,7 @@ hr{
     border: 1px solid #eee;
 	margin: 20px 0 20px 0
 }
-@media only screen and (max-width: 995px) {
-  .contact-content i {
-   font-size: 23px;
-  }
-}
+
 
 
 
@@ -855,3 +852,41 @@ hr{
     -webkit-transform: scale(1.0);
   }
 }
+@media only screen and (max-width: 995px) {
+	.contact-content i {
+	 font-size: 23px;
+	}
+	.contact-content hr{
+		width: 300px;
+		margin: 10px auto;
+	}
+	.nav-content{
+		text-align: center;
+		margin: 0!important
+	}
+
+  .nav-content li a{
+	  color: #fff!important;
+	  background-color: var(--maincolor)!important;
+  }
+  .nav-content li a:hover{
+	color: #1a1a1a!important;
+}
+	.navbar-toggler:not(:disabled):not(.disabled){
+		outline: none!important;
+	}
+	.home-content h2
+{
+	font-weight: bold;
+	font-size: 50px
+}
+  }
+
+
+  @media only screen and (max-width: 595px) {
+	.navbar-toggler-icon {
+		padding-right: 48px;
+	}
+
+
+  }

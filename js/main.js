@@ -13,10 +13,10 @@ $(function(){
 		$(".nav-link").css("background-color" , "grey" )
 	})
 	
- $('#Home').height($(window).height());
-       $(window).resize(function(){
-	  $('#Home').height($(window).height())
-                                });
+//  $('#Home').height($(window).height());
+//        $(window).resize(function(){
+// 	  $('#Home').height($(window).height())
+//                                 });
 	
  $(window).scroll(function(){
 	    if($(window).scrollTop()>5){
@@ -152,6 +152,26 @@ $('.owl-carousel').owlCarousel({
 	  function(){$("html , body").animate({scrollTop: $($("#Projects")).offset().top+850 },1000) } 												                                                          )});
 	
 	/* END  project section */ 
+
+
+	        
+            /*Counter*/
+			$(window).scroll(function(){
+				if($(window).scrollTop()>=$("#clients").offset().top-200)
+					{
+						$('.data').each(function(){
+						$(this).prop('Counter',0).animate({
+						Counter:$(this).attr("data-count")
+						},{
+						duration:5000,
+						easing: 'swing',
+						step: function(now){
+						$(this).text(Math.ceil(now))
+					}
+				})
+			})  
+					} 
+			})
 	
 
 
